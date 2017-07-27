@@ -28,8 +28,10 @@ function draw(coords, canvasID, jsID) {
   var cnvs = document.getElementById(canvasID);
   
   cnvs.style.position = "absolute";
-  cnvs.style.left = img.offsetLeft + "px";
-  cnvs.style.top = img.offsetTop + "px";
+  /*cnvs.style.left = img.offsetLeft + "px";
+  cnvs.style.top = img.offsetTop + "px";*/
+  cnvs.style.left = "10px";
+  cnvs.style.top = "10px";
   var _length = coords.length();
   k = 0;
   for (var i in coords) {
