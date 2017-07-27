@@ -39,10 +39,12 @@ function draw(coords, canvasID) {
   k = 0;
   for (var i in coords) {
     k++;
+    console.log(k);
     var angle = calculateAngle(k, _length);
     var ctx = cnvs.getContext("2d");
     ctx.beginPath();
     //use sine and cosine to calculate the x, y.
+    console.log(calculateSine(angle));
     ctx.arc(calculateSine(angle), calculateSine(angle), SIZE, 0, 2 * Math.PI, false);
     ctx.lineWidth = 3;
     ctx.strokeStyle = '#00ff00';
