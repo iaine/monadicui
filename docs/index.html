@@ -25,6 +25,7 @@ var SIZE = 40;
 // the public function that it called.
 // Currently draws a set of circles
 function draw(coords, canvasID) {
+  console.log("in draw");
   //var img = document.getElementById(jsID);
   //canvas div as the base
   var cnvs = document.getElementById(canvasID);
@@ -48,5 +49,5 @@ function draw(coords, canvasID) {
     ctx.stroke();
   }
 }
-<script>draw([{0,0},{1,2},{3,4},{5,6},{3,4}], 'myCanvas');</script>
+draw([{0,0},{1,2},{3,4},{5,6},{3,4}], 'myCanvas');</script>
 </body>
