@@ -23,7 +23,7 @@ var SIZE = 40;
 // the public function that it called. 
 // Currently draws a set of circles 
 function draw(coords, canvasID, jsID) {
-  var img = document.getElementById(jsID);
+  //var img = document.getElementById(jsID);
   //canvas div as the base
   var cnvs = document.getElementById(canvasID);
   
