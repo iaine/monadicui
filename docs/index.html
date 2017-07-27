@@ -34,7 +34,7 @@ function draw(coords, canvasID) {
   /*cnvs.style.left = img.offsetLeft + "px";
   cnvs.style.top = img.offsetTop + "px";*/
   cnvs.style.left = 10+"px";
-  cnvs.style.top = 582+"px";
+  cnvs.style.top = 10+"px";
   var _length = coords.length;
   k = 0;
   for (var i in coords) {
@@ -45,7 +45,7 @@ function draw(coords, canvasID) {
     ctx.beginPath();
     //use sine and cosine to calculate the x, y.
     console.log(calculateSine(angle));
-    ctx.arc(calculateSine(angle), calculateSine(angle), SIZE, 0, 2 * Math.PI, false);
+    ctx.arc(calculateSine(angle), calculateCosine(angle), SIZE, 0, 2 * Math.PI, false);
     ctx.lineWidth = 3;
     ctx.strokeStyle = '#00ff00';
     ctx.stroke();
